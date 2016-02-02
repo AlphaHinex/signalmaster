@@ -130,9 +130,11 @@ module.exports = function (server, config) {
         var result = {
             clients: {}
         };
-        Object.keys(clients).forEach(function (id) {
-            result.clients[id] = adapter.nsp.connected[id].resources;
-        });
+        if (clients.sockets) {
+            Object.keys(clients.sockets).forEach(function (id) {
+                result.clients[id] = adapter.nsp.connected[id].resources;
+            });
+        }
         return result;
     }
 
