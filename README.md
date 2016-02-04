@@ -11,11 +11,11 @@ Read more:
  - [SimpleWebRTC.com](http://simplewebrtc.com)
  - [talky.io](https://talky.io)
 
-## Running
+## Running （`leancloud` branch modified)
 
 Running the server requires a valid installation of node.js which can be installed from the nodejs.org website. After installing the package you will need to install the node dependencies.
 
-1) npm install async, node-uuid, redis, underscore, precommit-hook, getconfig, yetify, socket.io
+1) npm install node-uuid, underscore, precommit-hook, getconfig, yetify, socket.io
 
 2) run the server using "node server.js"
 
@@ -25,7 +25,7 @@ Running the server requires a valid installation of node.js which can be install
 
 4) Open a web browser to the specified URL and port to ensure that the server is running properly. You should see the message
 
-                        "Welcome to socket.io"
+                        "Welcome to signal master! Powered by LeanEngine."
 
 ### Production Environment
 * generate your ssl certs
