@@ -5,7 +5,7 @@ var yetify = require('yetify'),
     sockets = require('./sockets'),
     port = parseInt(process.env.LC_APP_PORT || config.server.port, 10),
     server_handler = function (req, res) {
-        if (req.url === '/1.1/functions/_ops/metadatas') {
+        if (req.url === '/__engine/1/ping' || req.url === '/1.1/functions/_ops/metadatas') {
             res.end(JSON.stringify({
                 "runtime": "nodejs-" + process.version,
                 "version": "custom"
